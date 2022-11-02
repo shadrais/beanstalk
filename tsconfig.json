@@ -1,0 +1,19 @@
+{
+    "ts-node": {
+      "files": true
+    },
+    "compilerOptions": {
+      "sourceMap": true,
+      "target": "es2017",
+      "outDir": "./dist",
+      "baseUrl": "./api/src",
+      "alwaysStrict": true,
+      "noImplicitAny": true,
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true,
+      "moduleResolution": "node"
+    },
+    "include": ["api/src/**/*.ts", "index.ts"],
+    "exclude": ["node_modules"]
+  }
+  
