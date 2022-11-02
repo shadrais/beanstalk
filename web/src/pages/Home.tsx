@@ -39,7 +39,10 @@ const Home = () => {
     formData.append('log', file)
     try {
       setLoading(true)
-      const res = await axios.post('http://localhost:3000/api/file', formData)
+      const res = await axios.post(
+        'https://beanstalk-production.up.railway.app/api/file',
+        formData
+      )
       console.log(res)
       exportData(res.data)
     } catch (err) {
